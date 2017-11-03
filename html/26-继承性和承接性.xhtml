@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Title</title>
+    <style type="text/css">
+        /* 继承性
+         * 文字控制属性可以继承
+         * 区块控制属性只是作用在区块本身，不可以继承
+         *注意事项：超链接的颜色是需要单独针对修改
+         */
+        span{
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            border: 1px black dashed
+        }
+
+        /* 层叠性
+         * 后面写的可以把后面写的覆盖掉
+         */
+        div span{
+            color: blue
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <p>
+                    <span>文字</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
