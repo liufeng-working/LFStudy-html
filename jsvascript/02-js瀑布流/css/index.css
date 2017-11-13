@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+#main {
+    /*定位*/
+    position: relative;
+}
+
+.box {
+    /*内边距*/
+    padding: 15px 0 0 15px;
+    float: left;
+}
+
+.pic {
+    /*边框*/
+    border: 1px solid #dddddd;
+    padding: 10px;
+    background-color: green;
+}
+
+.pic img {
+    width: 250px;
+}

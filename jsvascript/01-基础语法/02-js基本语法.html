@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // 了解基本语法
+        var age = 18;
+        var money = 10.89;
+        var name = 'jack';
+        var result = true; //false
+        var number = null;
+        var number1 = undefined;
+
+        console.log(age, money, name, result, number, number1);
+
+        // 真实类型
+        console.log(typeof age, typeof money, typeof name, typeof result, typeof number, typeof number1);
+
+        // 基本数据类型的运算
+        console.log(name + 'liufeng');
+
+        // 数组
+        var numbers = [age, money, name, result, number, number1];
+
+        //遍历数组
+        for (var i = 0; i < numbers.length; i++) {
+
+        }
+
+        for (var j in  numbers) {
+        }
+
+        // js中常用属性
+        // 删除数组中最后一个元素
+        numbers.pop();
+
+        // js常用类库 Math
+        var numArr = [10, 20, 30, 40, 50];
+        var maxNum = Math.min.apply(Math, numArr);
+        console.log(maxNum);
+
+
+    </script>
+
+    <style>
+        p {
+
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="alert('点你了');">点我啊</button>
+</body>
+</html>

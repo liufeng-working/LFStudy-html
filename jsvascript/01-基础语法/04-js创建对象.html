@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var dog = {
+            name: 'erha',
+            age: 10,
+            height: 170,
+            friend: ['lili', 'wangcai'],
+
+            eat: function () {
+                console.log('吃');
+            },
+
+            run: function () {
+                console.log('跑');
+            }
+        };
+
+        dog.eat();
+
+        console.log(dog);
+
+        // 批量产生对象
+        // 构造函数
+        var Dog = function () {
+            this.name = null;
+            this.age = null;
+            this.friend = [];
+            this.height = null;
+
+            this.eat = function (thing) {
+                console.log(this.name + '吃' + thing);
+            };
+
+            this.run = function () {
+                console.log('跑');
+            };
+        };
+
+        var ddd = new Dog();
+        ddd.name = 'liufeng';
+        ddd.eat('shi');
+        console.log(ddd);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

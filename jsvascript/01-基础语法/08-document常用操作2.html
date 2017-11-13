@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <button>隐藏</button>
+    <br>
+    <p id="word">这个妹子可以</p>
+    <br>
+    <img class="icon" src="timg-2.jpeg" alt="meinv">
+
+    <script type="text/javascript">
+
+        // 1.拿到需要操作的标签
+        var img = document.getElementsByClassName('icon')[0];
+        var p = document.getElementById('word');
+        var btn = document.getElementsByTagName('button')[0];
+
+        console.log(btn);
+        // 2.监听按钮的点击
+        btn.onclick = function () {
+            if (btn.innerText === '隐藏') {
+                p.style.display = 'none';
+                img.style.display = 'none';
+                btn.innerText = '显示'
+            }else {
+                // 调用css的属性，需要加上style
+                p.style.display = 'block';
+                img.style.display = 'inline-block';
+                btn.innerText = '隐藏';
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        // window的作用
+
+        // 第一大作用
+        // 1.所有全局的变量，都是window的属性
+        // 2.所有的全局函数，都都window的方法
+
+        var  age = 17;
+
+        console.log(window.age);
+
+        function dog() {
+            console.log('这是一条可爱的🐶');
+        }
+
+        window.dog();
+
+
+        // 第二大作用
+        // 动态跳转
+        alert(0);
+        window.location.href = 'https://www.baidu.com';
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

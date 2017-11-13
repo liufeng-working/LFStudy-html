@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>认识jQuery</title>
+
+    <!--
+    js存在的问题
+    1.浏览器兼容问题
+    2.存在复杂的dom操作
+    3.复杂的特效和动画的实现
+    4.请求网络数据存在跨域问题
+
+    jQuery的优势
+    1.几乎不存在浏览器兼容问题
+    2.dom操作和特效动画轻松实现
+    3.多种方式的网络请求方案
+    -->
+</head>
+<body>
+    <div id="main">
+        <div class="word">
+            <p>我是一段文字</p>
+        </div>
+        <button>显示</button>
+        <button>隐藏</button>
+        <div class="pic">
+            <img src="images/0.jpg" alt="咩女">
+        </div>
+    </div>
+
+    <!--引入jQuery类库-->
+    <script src="js/jQuery-3.2.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // 一个jQuery对对象 -> $()
+        // 拿到对应的标签 css选择器方式
+
+        // 查看属性值
+        var att = $('.word').attr('class');
+        console.log(att);
+
+        // 改变属性值
+        $('img').attr('src', 'images/2.jpg');
+        $('p').text('我是刘丰');
+
+        // 事件
+        $('button').eq(0).on('click', function () {
+            $('p').show();
+            $('img').show();
+        });
+
+        $('button').eq(1).on('click', function () {
+            $('p').hide();
+            $('img').hide();
+        });
+
+        // 遍历
+        var datas = [10, 20, 30, 40];
+        $.each(datas, function (index, value) {
+            console.log(value);
+        })
+
+        // 写css
+        $('.word').css({
+            background: 'red',
+            border: '1px solid green'
+        });
+    </script>
+</body>
+</html>
